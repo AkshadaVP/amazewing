@@ -4,6 +4,7 @@ import jet1 from "../assets/cirrus-vision-sf50.jpg";
 import jet2 from "../assets/embraer-phenom-100.jpg";
 import jet3 from "../assets/hondajet-ha-420.png";
 import jet4 from "../assets/NewProject.png"; // Optional: rename to something clearer
+import Footer from "../Components/Footer";
 
 const jets = [
   {
@@ -80,6 +81,7 @@ const HeavyJets = () => {
           </div>
         ))}
       </section>
+      <Footer/>
     </div>
   );
 };

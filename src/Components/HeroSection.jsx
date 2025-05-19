@@ -3,9 +3,8 @@ import { Link } from "react-router-dom";
 
 import heroVideo from "../assets/HeroVideo.mp4";
 import AboutSection from "./AboutSection";
-import ServicesSection from "./ServicesSection";
-import Footer from "./Footer";
 import AircraftSection from "./AircraftSection";
+
 
 const HeroSection = () => {
   const heroRef = useRef(null);
@@ -58,8 +57,6 @@ const HeroSection = () => {
 
       <AboutSection />
       <AircraftSection />
-      <ServicesSection />
-      <Footer />
     </section>
   );
 };

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import jet1 from "../assets/hawker-800xp-exterior-new-js-mj.jpg";
 import jet2 from "../assets/gulfstream-g150-mj.jpg";
 import jet3 from "../assets/cessna-citation-xlsplus-mj.jpg";
+import Footer from "../Components/Footer";
 
 
 
@@ -76,6 +77,7 @@ const MidJets = () => {
           </div>
         ))}
       </section>
+      <Footer/>
     </div>
   );
 };

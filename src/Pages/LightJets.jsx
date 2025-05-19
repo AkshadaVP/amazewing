@@ -4,6 +4,7 @@ import jet1 from "../assets/pilatus-pc24-lg1.jpg";
 import jet2 from "../assets/learjet-75-liberty-lg2.jpg";
 import jet3 from "../assets/embraer-phenom-300-lg3.jpg";
 import jet4 from "../assets/cessna-cj3cj4-lg4.jpeg";
+import Footer from "../Components/Footer";
 
 const jets = [
   {
@@ -87,6 +88,7 @@ const LightJets = () => {
           </div>
         ))}
       </section>
+      <Footer/>
     </div>
   );
 };

@@ -1,17 +1,36 @@
 @import "tailwindcss";
-/* src/index.css */
+
+/* Hide scrollbars globally */
 body {
-  font-family: 'Montserrat', sans-serif; /* Set Montserrat as the default font */
-}
-body, html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+/* Utility class to apply scrollbar hiding selectively */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
 
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
