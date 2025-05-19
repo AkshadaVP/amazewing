@@ -41,54 +41,55 @@ const LightJets = () => {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Header */}
-      <section className="max-w-6xl mx-auto px-6 py-16 text-center">
-        <p className="uppercase text-xl tracking-widest text-white/60 mb-2 animate-fadeInUp">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+        <p className="uppercase text-sm sm:text-base tracking-widest text-white/60 mb-2 animate-fadeInUp">
           Aircraft
         </p>
-        <h1 className="text-2xl md:text-5xl font-luxury tracking-wide leading-tight animate-fadeInUp">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-luxury tracking-wide leading-tight animate-fadeInUp">
           Light Jet Models
         </h1>
-        <p className="mt-4 text-white/70 max-w-2xl mx-auto text-xl animate-fadeInUp">
-        Explore our elite collection of light jets — designed for speed, efficiency and style in short- to mid-range luxury travel.
+        <p className="mt-4 text-white/70 max-w-2xl mx-auto text-base sm:text-lg md:text-xl animate-fadeInUp">
+          Explore our elite collection of light jets — designed for speed, efficiency and style in short- to mid-range luxury travel.
         </p>
-
       </section>
 
       {/* Jet Cards */}
-      <section className="space-y-10 px-4 max-w-6xl mx-auto pb-20">
+      <section className="space-y-10 px-4 sm:px-6 max-w-6xl mx-auto pb-16 sm:pb-20">
         {jets.map((jet, index) => (
           <div
             key={index}
-            className="bg-[#111111] rounded-2xl shadow-md flex flex-col md:flex-row items-center md:items-start md:justify-between gap-6 p-6 md:p-8 animate-slideInCard"
+            className="bg-[#111111] rounded-2xl shadow-md flex flex-col md:flex-row items-center md:items-start md:justify-between gap-6 p-6 md:p-8 animate-slideInCard hover:scale-[1.015] hover:shadow-xl transition-all duration-300"
             style={{ animationDelay: `${index * 0.2}s` }}
           >
             <img
               src={jet.image}
               alt={jet.name}
-              className="w-full md:w-[40%] h-[220px] object-cover rounded-lg transition-transform duration-300 hover:scale-105"
+              className="w-full md:w-[40%] h-[200px] sm:h-[240px] md:h-[220px] object-cover rounded-lg transition-transform duration-300 hover:scale-105"
             />
             <div className="flex-1 text-left space-y-4">
-              <h2 className="text-2xl font-luxury">{jet.name}</h2>
+              <h2 className="text-xl sm:text-2xl font-luxury">{jet.name}</h2>
 
-              <div className="flex gap-3 text-xl">
+              <div className="flex flex-wrap gap-3 text-sm sm:text-base md:text-lg">
                 <span className="bg-white/10 px-4 py-1 rounded-full">⏱ {jet.flightTime}</span>
                 <span className="bg-white/10 px-4 py-1 rounded-full">👥 {jet.capacity}</span>
-                </div>
+              </div>
 
-                <p className="text-white/70 text-xl leading-relaxed">{jet.description}</p>
+              <p className="text-white/70 text-sm sm:text-base md:text-lg leading-relaxed">
+                {jet.description}
+              </p>
 
-                <Link
+              <Link
                 to="/book"
-                className="inline-block border border-white px-5 py-2 text-base rounded-full hover:bg-white hover:text-black transition"
-                >
+                className="inline-block border border-white px-5 py-2 text-sm sm:text-base rounded-full hover:bg-white hover:text-black transition-all duration-300"
+              >
                 → BOOK NOW
-                </Link>
-
+              </Link>
             </div>
           </div>
         ))}
       </section>
-      <Footer/>
+
+      <Footer />
     </div>
   );
 };

@@ -1,4 +1,3 @@
-// src/components/AircraftSection.jsx
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -30,21 +29,21 @@ const AircraftSection = () => {
   ];
 
   return (
-    <section id="aircraft" className="py-20 bg-black text-white">
+    <section id="aircraft" className="py-16 sm:py-20 bg-black text-white">
       <motion.div
-        className="text-center mb-12"
+        className="text-center mb-8 sm:mb-12 px-4"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl font-bold mb-2 tracking-wide uppercase">
-           AIRCRAFT
-          </h2>
-        <div className="w-24 h-[0.5px] bg-yellow-500 mx-auto rounded-full"></div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 tracking-wide uppercase">
+          AIRCRAFT
+        </h2>
+        <div className="w-20 sm:w-24 h-[1px] bg-yellow-500 mx-auto rounded-full"></div>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 px-4 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         {aircraftData.map((item, index) => (
           <motion.div
             key={index}
@@ -60,7 +59,7 @@ const AircraftSection = () => {
               button={
                 <Link
                   to={item.link}
-                  className="border border-white px-4 py-2 mt-4 block text-center hover:bg-white hover:text-black transition"
+                  className="border border-white px-4 py-2 mt-4 block text-center hover:bg-white hover:text-black transition text-sm sm:text-base"
                 >
                   → View Jets
                 </Link>
