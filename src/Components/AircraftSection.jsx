@@ -38,7 +38,9 @@ const AircraftSection = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-bold mb-4 tracking-wide uppercase">Aircraft</h2>
+        <h2 className="text-3xl font-bold mb-2 tracking-wide uppercase">
+           AIRCRAFT
+          </h2>
         <div className="w-24 h-[0.5px] bg-yellow-500 mx-auto rounded-full"></div>
       </motion.div>
 

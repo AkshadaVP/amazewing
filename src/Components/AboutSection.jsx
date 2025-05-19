@@ -12,7 +12,7 @@ const AboutSection = () => {
           viewport={{ once: false, amount: 0.5 }}
           className="text-center mb-8"
         >
-          <h2 className="text-3xl font-bold mb-3 tracking-widest uppercase">
+          <h2 className="text-3xl font-bold mb-2">
             ABOUT US
           </h2>
           {/* Sleek gold line, no glow */}
