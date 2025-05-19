@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import jet1 from "../assets/cirrus-vision-sf50.jpg";
 import jet2 from "../assets/embraer-phenom-100.jpg";
 import jet3 from "../assets/hondajet-ha-420.png";
-import jet4 from "../assets/newproject.png"; // Optional: rename to something clearer
+import jet4 from "../assets/NewProject.png"; // Optional: rename to something clearer
 
 const jets = [
   {
